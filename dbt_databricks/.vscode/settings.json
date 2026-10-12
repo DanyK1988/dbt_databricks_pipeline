@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.sql": "jinja-sql",
+        "*.yml": "jinja-yaml"
+    },
+    "[jinja-sql]": {
+        "editor.defaultFormatter": null
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    }
+}

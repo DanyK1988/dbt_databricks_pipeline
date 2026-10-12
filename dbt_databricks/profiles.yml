@@ -1,0 +1,11 @@
+databricks_pipeline:
+  outputs:
+    dev:
+      catalog: dbt_vault
+      host: dbc-345bab6d-06a6.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/b4f0675274c2f51d
+      schema: default
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+  target: dev

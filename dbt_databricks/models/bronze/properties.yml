@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: bronze_sales
+    config:
+      materialized: table
+
+
+  - name: bronze_returns
+    config:
+      materialized: table
