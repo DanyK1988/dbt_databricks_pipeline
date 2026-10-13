@@ -1,15 +1,23 @@
-Welcome to your new dbt project!
+# Databricks Pipeline dbt Project
 
-### Using the starter project
+This directory contains the dbt models, tests, macros, and configuration for the Databricks Medallion data pipeline.
 
-Try running the following commands:
-- dbt run
-- dbt test
+For full project documentation, architecture diagrams, and setup instructions, refer to the [Root README.md](../README.md).
 
+### Quick Commands
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Run from this directory:
+
+```bash
+# Debug profile and warehouse connection
+dbt debug
+
+# Run all models
+dbt run
+
+# Run tests
+dbt test
+
+# Generate and view documentation
+dbt docs generate && dbt docs serve
+```
