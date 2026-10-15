@@ -1,6 +1,6 @@
 # Databricks Pipeline dbt Project
 
-This directory contains the dbt models, tests, macros, and configuration for the Databricks Medallion data pipeline.
+This directory contains the dbt models, seeds, snapshots, analyses, tests, macros, and configuration for the Databricks Medallion data pipeline.
 
 For full project documentation, architecture diagrams, and setup instructions, refer to the [Root README.md](../README.md).
 
@@ -12,8 +12,16 @@ Run from this directory:
 # Debug profile and warehouse connection
 dbt debug
 
-# Run all models
+# Load seeds
+dbt seed
+
+# Run all models (or by layer / target)
 dbt run
+dbt run --select silver
+dbt run --target prod
+
+# Run snapshots (SCD Type 2)
+dbt snapshot
 
 # Run tests
 dbt test
