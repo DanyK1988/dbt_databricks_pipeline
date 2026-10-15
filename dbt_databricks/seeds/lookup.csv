@@ -1,0 +1,5 @@
+custome_id,customer_name,customer_email,customer_segment
+1,John Doe, [EMAIL_ADDRESS],Premium
+2,Jane Smith, [EMAIL_ADDRESS],Standard
+3,Bob Johnson, [EMAIL_ADDRESS],Premium
+4,Alice Williams, [EMAIL_ADDRESS],Standard

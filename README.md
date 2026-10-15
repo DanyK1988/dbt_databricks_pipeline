@@ -10,30 +10,30 @@ The pipeline ingests raw sales and retail data into Databricks Unity Catalog (`d
 
 ```mermaid
 flowchart LR
-    subgraph Sources [Raw Source Tables]
-        S1[(fact_sales)]
-        S2[(fact_returns)]
-        S3[(dim_date)]
-        S4[(dim_store)]
-        S5[(dim_product)]
-        S6[(dim_customer)]
+    subgraph Sources ["Raw Source Tables"]
+        S1[("fact_sales")]
+        S2[("fact_returns")]
+        S3[("dim_date")]
+        S4[("dim_store")]
+        S5[("dim_product")]
+        S6[("dim_customer")]
     end
 
-    subgraph Bronze [Bronze Layer (Ingestion & Schema Standardization)]
-        B1[bronze_sales]
-        B2[bronze_returns]
-        B3[bronze_date]
-        B4[bronze_store]
-        B5[bronze_product]
-        B6[bronze_customer]
+    subgraph Bronze ["Bronze Layer (Ingestion & Schema Standardization)"]
+        B1["bronze_sales"]
+        B2["bronze_returns"]
+        B3["bronze_date"]
+        B4["bronze_store"]
+        B5["bronze_product"]
+        B6["bronze_customer"]
     end
 
-    subgraph Silver [Silver Layer (Cleansing & Conformance)]
-        SV[Silver Models (Planned)]
+    subgraph Silver ["Silver Layer (Cleansing & Conformance)"]
+        SV["Silver Models (Planned)"]
     end
 
-    subgraph Gold [Gold Layer (Aggregations & Business Marts)]
-        GD[Gold Models (Planned)]
+    subgraph Gold ["Gold Layer (Aggregations & Business Marts)"]
+        GD["Gold Models (Planned)"]
     end
 
     Sources --> Bronze

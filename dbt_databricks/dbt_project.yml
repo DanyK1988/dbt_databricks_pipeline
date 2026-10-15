@@ -42,3 +42,6 @@ models:
       +materialized: incremental
       +schema: gold
     
+seeds:
+  databricks_pipeline:
+    +schema: bronze

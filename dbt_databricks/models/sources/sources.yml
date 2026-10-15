@@ -16,4 +16,6 @@ sources:
 
       - name: dim_product
 
+      - name: items
+
       - name: dim_customer
