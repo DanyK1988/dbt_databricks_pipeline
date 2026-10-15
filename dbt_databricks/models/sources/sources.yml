@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: raw
-    database: dbt_vault
+    database: '{{ target.catalog }}'
     schema: source
     description: Raw data from the project
     tables:
