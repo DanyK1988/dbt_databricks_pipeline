@@ -12,6 +12,5 @@ wheels/
 .pyproject.toml
 uv.lock
 logs/
-dbt_databricks/logs/
-dbt_databricks/target/
+.DS_Store
 
